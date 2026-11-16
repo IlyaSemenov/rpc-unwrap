@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "paths": {
+      "orpc-unwrap": ["../src"]
+    }
+  },
+  "include": ["**/*.ts"]
+}

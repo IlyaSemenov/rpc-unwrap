@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/bun",
+  "compilerOptions": {
+    "types": ["bun"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  // tsgo emits declarations only for included files, so the build must include the bundled core.
+  "include": ["src/**/*.ts", "*.ts", "../core/src/**/*.ts"],
+  "exclude": ["../core/src/**/*.test.ts", "../core/src/**/*.type-test.ts"]
+}

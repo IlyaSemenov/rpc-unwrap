@@ -1,0 +1,45 @@
+{
+  "name": "orpc-unwrap",
+  "version": "0.0.0",
+  "description": "Convert domain errors returned as values into the errors that an oRPC procedure declares.",
+  "homepage": "https://github.com/IlyaSemenov/rpc-unwrap/tree/main/packages/orpc-unwrap#readme",
+  "bugs": "https://github.com/IlyaSemenov/rpc-unwrap/issues",
+  "license": "MIT",
+  "author": "Ilya Semenov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaSemenov/rpc-unwrap.git",
+    "directory": "packages/orpc-unwrap"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "bun test",
+    "types": "bun check && bun check -p tests",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/core": "^0.18.5",
+    "@orpc/server": "2.0.0-beta.50",
+    "@rpc-unwrap/core": "workspace:*",
+    "@tsconfig/bun": "^1.0.12",
+    "@types/bun": "^1.4.4",
+    "publint": "^0.3.25",
+    "tsdown": "^0.23.7",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.7"
+  }
+}
