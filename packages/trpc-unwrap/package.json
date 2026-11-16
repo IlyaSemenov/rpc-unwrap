@@ -1,6 +1,6 @@
 {
   "name": "trpc-unwrap",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert domain errors returned as values into tRPC errors.",
   "homepage": "https://github.com/IlyaSemenov/rpc-unwrap/tree/main/packages/trpc-unwrap#readme",
   "bugs": "https://github.com/IlyaSemenov/rpc-unwrap/issues",

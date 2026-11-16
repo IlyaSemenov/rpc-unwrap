@@ -1,6 +1,6 @@
 {
   "name": "orpc-unwrap",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert domain errors returned as values into the errors that an oRPC procedure declares.",
   "homepage": "https://github.com/IlyaSemenov/rpc-unwrap/tree/main/packages/orpc-unwrap#readme",
   "bugs": "https://github.com/IlyaSemenov/rpc-unwrap/issues",
